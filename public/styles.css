@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f5e5e5c8; /* Light grey background */
+}
+
+.legend {
+    position: absolute;
+    bottom: 50px;
+    right: 30px;
+    display: flex;
+    flex-direction: column; /* Display items in a column */
+    gap: 5px; /* Adjust gap between items */
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.8em; 
+    
+}
+
+.legend .red {
+    width: 15px; /* Width of the small colored box */
+    height: 15px;
+    border: 2px solid #ff0101;
+    background-color: red; /* Red color for booked */
+}
+
+.legend .green {
+    width: 15px; /* Width of the small colored box */
+    height: 15px;
+    background-color: #fff;
+    border: 2px solid green; /* Green border for available */
+}
+
+.legend .grey {
+    width: 15px; /* Width of the small colored box */
+    height: 15px;
+    border: 2px solid #ccc;
+    background-color:rgb(188, 184, 184); /* Grey color for blocked */
+}
+
+.legend-item span {
+    white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.seats {
+    padding-top: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.seat {
+    width: 50px;
+    height: 50px;
+    margin: 20px;
+    line-height: 50px;
+    cursor: pointer;
+    text-align: center;
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+.available{
+    background-color: #fff;
+    border: 2px solid green; /* Green background for available seats */
+}
+
+.available:hover {
+    background-color: green; /* Light green background on hover for available seats */
+}
+
+.booked {
+    background-color: red;
+    cursor: not-allowed;
+}
+
+.blocked {
+    border: 2px solid #ccc;
+    background-color: rgb(188, 184, 184);
+    cursor: not-allowed;
+}
+
+.footer {
+    position: fixed;
+    bottom: 50px; /* Positioned a little above the bottom */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px; /* Increase width for a bigger screen */
+    height: 60px; /* Increase height for a bigger screen */
+    background-color: #837d7d; /* Background color of the screen */
+    text-align: center;
+    line-height: 60px; /* Vertical alignment of text */
+    color: white;
+    clip-path: polygon(10% 0%, 90% 0%, 100% 100%, 0% 100%); /* Creates a trapezium shape */
+    border: 5px solid #444; /* Border to resemble a TV frame */
+    border-radius: 10px; /* Rounded corners for the TV frame */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Shadow for a more TV-like appearance */
+}
+.Ayush{
+    position: fixed;
+    bottom: 10px; /* Positioned a little above the bottom */
+    left: 44.5%;
+    text-decoration: none;
+
+}
+.Ayush a{
+    color: #444;
+    text-decoration: none;
+}
+.Ayush a:hover{
+    color: rgb(13, 191, 240);
+    transition: ease;
+}

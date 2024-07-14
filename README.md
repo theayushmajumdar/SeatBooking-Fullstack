@@ -101,21 +101,29 @@ INSERT INTO seats (seat_id, status) VALUES
 -database.sql: SQL script to set up the database and initial seat statuses.
 
 **Approach**
+
 1.HTML & CSS:
 
 -Defined the structure and styles for the seat booking system, including hover effects and initial seat statuses.
+
+
 2.jQuery:
 
 -Implemented functions to handle hover effects and seat booking actions.
 -Used AJAX to communicate with the server and update seat statuses in real-time.
+
+
 3.SQL:
 
 -Designed a simple database schema to store seat statuses.
 -Implemented queries to update seat statuses upon booking.
+
+
 4.**Assumptions**
 -The initial state of the seats is predefined and stored in the database.
 -The server is responsible for managing seat statuses and updating the database.
 -The client communicates with the server via AJAX for real-time updates.
+
 
 **Edge Cases**
 -Concurrency: Handled by ensuring the database is updated atomically during seat booking.

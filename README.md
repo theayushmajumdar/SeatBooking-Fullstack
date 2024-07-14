@@ -65,13 +65,13 @@ DB_NAME=seat_booking_system
 node server.js
 ```
 
-**Usage**
+## **Usage**
 1.Open your browser and navigate to http://localhost:3000.
 2.You will see the seat booking system interface.
 3.Hover over available seats to see the hover effect.
 4.Click on available seats to book them. The status will update in real-time.
 
-**Database Schema**
+## **Database Schema**
 The database schema consists of a single table named seats:
 
 ```bash
@@ -93,14 +93,14 @@ INSERT INTO seats (seat_id, status) VALUES
 ('A6', 'available');
 ```
 
-**Code Structure**
+## **Code Structure**
 -index.html: Main HTML file that defines the structure of the seat booking system.
 -styles.css: CSS file that styles the seat booking system.
 -script.js: jQuery script that manages seat interactions and AJAX requests.
 -server.js: Node.js server script that handles routing and database operations.
 -database.sql: SQL script to set up the database and initial seat statuses.
 
-**Approach**
+## **Approach**
 
 1.HTML & CSS:
 
@@ -119,15 +119,15 @@ INSERT INTO seats (seat_id, status) VALUES
 -Implemented queries to update seat statuses upon booking.
 
 
-4.**Assumptions**
+4.## **Assumptions**
 -The initial state of the seats is predefined and stored in the database.
 -The server is responsible for managing seat statuses and updating the database.
 -The client communicates with the server via AJAX for real-time updates.
 
 
-**Edge Cases**
+## **Edge Cases**
 -Concurrency: Handled by ensuring the database is updated atomically during seat booking.
 -Page Refresh: The seat statuses are fetched from the server upon page load to ensure consistency.
 
-**License**
+## **License**
 -This project is licensed under the MIT License.

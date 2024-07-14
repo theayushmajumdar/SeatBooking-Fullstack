@@ -119,7 +119,7 @@ INSERT INTO seats (seat_id, status) VALUES
 -Implemented queries to update seat statuses upon booking.
 
 
-4.## **Assumptions**
+## **Assumptions**
 -The initial state of the seats is predefined and stored in the database.
 -The server is responsible for managing seat statuses and updating the database.
 -The client communicates with the server via AJAX for real-time updates.

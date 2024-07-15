@@ -37,6 +37,9 @@ The objective of this project is to create a seat booking system similar to Book
   - Update the UI to reflect booked seats in real-time.
   - Indicate hover state for booking consideration.
 
+- **Node.js and Express.js**
+  - Backend for interacting with the database.
+    
 ## Installation
 1. **Clone the repository:**
    ```bash
